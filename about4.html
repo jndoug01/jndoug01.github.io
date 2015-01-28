@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<style>
+html,
+body {
+height: 60%;
+}
+.carousel,
+.item,
+.active {
+height: 100%;
+}
+.carousel-inner {
+height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+width: 100%;
+height: 100%;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+footer {
+margin: 50px 0;
+}
+</style>
+  <title>Bootstrap About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.nathandougherty.altervista.org">altervista page</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="contact4.html">contact</a></li>
+            <li class = "active"><a href="about4.html">about</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Full Page Image Background Carousel Header -->
+<h2 align = "center"> Things I like</h2>
+<header id="myCarousel" class="carousel slide">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<!-- Wrapper for Slides -->
+<div class="carousel-inner">
+<div class="item active">
+<!-- Set the first background image using inline CSS below. -->
+<div class="fill" style="background-image:url('http://grfx.cstv.com/schools/lou/graphics/lou-10-logo-uofl.gif');"></div>
+<div class="carousel-caption">
+<h2>uofl</h2>
+</div>
+</div>
+<div class="item">
+<!-- Set the second background image using inline CSS below. -->
+<div class="fill" style="background-image:url('https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/1398363_10151693893422894_1256621554_o.jpg');"></div>
+<div class="carousel-caption">
+<h2>batman</h2>
+</div>
+</div>
+<div class="item">
+<!-- Set the third background image using inline CSS below. -->
+<div class="fill" style="background-image:url('http://mytraveljob.com/wp-content/uploads/2012/02/Kentucky-Travel-Louisville-Skyline.jpg');"></div>
+<div class="carousel-caption">
+<h2>louisville</h2>
+</div>
+</div>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="icon-next"></span>
+</a>
+</header>
+<!-- Footer -->
+<footer>
+</footer>
+</div>
+<script>
+$('.carousel').carousel({
+interval: 3500 //changes the speed
+})
+</script>
+
+</body>
+</html>
