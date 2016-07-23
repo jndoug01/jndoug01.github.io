@@ -18,6 +18,34 @@ h1 {
 }
 </style>
 
+<style>
+html,
+body {
+height: 60%;
+}
+.carousel,
+.item,
+.active {
+height: 100%;
+}
+.carousel-inner {
+height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+width: 100%;
+height: 100%;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+}
+footer {
+margin: 50px 0;
+}
+</style>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -63,5 +91,57 @@ h1 {
   </div>
 </div>
 </div>
+
+<!-- Full Page Image Background Carousel Header -->
+<h2 align = "center"> WInterests</h2>
+<header id="myCarousel" class="carousel slide">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<!-- Wrapper for Slides -->
+<div class="carousel-inner">
+<div class="item active">
+<!-- Set the first background image using inline CSS below. -->
+<div class="fill" style="background-image:url('http://cdn.lookanimals.com/pictures/media-cache-ak0.pinimg.com/originals/5c/b1/a6/5cb1a699bb69eccd34489c74a403c852.jpg');"></div>
+<div class="carousel-caption">
+<h2>uofl</h2>
+</div>
+</div>
+<div class="item">
+<!-- Set the second background image using inline CSS below. -->
+<div class="fill" style="background-image:url('http://cartoonbros.com/wp-content/uploads/2016/04/Batman-1.png');"></div>
+<div class="carousel-caption">
+<h2>batman</h2>
+</div>
+</div>
+<div class="item">
+<!-- Set the third background image using inline CSS below. -->
+<div class="fill" style="background-image:url('http://kyasce.org/gallery/image?format=raw&type=orig&id=1');"></div>
+<div class="carousel-caption">
+<h2>louisville</h2>
+</div>
+</div>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="icon-next"></span>
+</a>
+</header>
+<!-- Footer -->
+<footer>
+</footer>
+</div>
+<script>
+$('.carousel').carousel({
+interval: 3500 //changes the speed
+})
+</script>
+
 </body>
 </html>
